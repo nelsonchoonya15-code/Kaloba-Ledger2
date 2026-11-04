@@ -1,3 +1,4 @@
+package kaloba.service;
 
 
 import kaloba.exception.CreditLimitExceededException;
