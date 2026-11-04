@@ -13,4 +13,8 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
+    <build>
+        <sourceDirectory>${project.basedir}/src</sourceDirectory>
+    </build>
+
 </project>

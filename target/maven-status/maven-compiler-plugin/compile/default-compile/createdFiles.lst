@@ -1,0 +1,6 @@
+kaloba\model\Customer.class
+main.class
+kaloba\model\Leager.class
+kaloba\model\Ledger.class
+kaloba\model\Repayment.class
+kaloba\model\CreditSale.class
