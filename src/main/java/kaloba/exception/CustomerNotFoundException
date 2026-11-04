@@ -1,0 +1,8 @@
+package kaloba.exception;
+
+public class CustomerNotFoundException extends Exception {
+
+    public CustomerNotFoundException(int customerId) {
+        super("Customer with id " + customerId + " was not found");
+    }
+}
