@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaloba Ledger</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Kaloba Ledger</h1>
+      <p>Manage customers, credit sales, and repayments.</p>
+    </header>
+
+    <p id="message" role="status" aria-live="polite"></p>
+
+    <section>
+      <h2>Customers</h2>
+      <label><input id="onlyOwing" type="checkbox" onchange="loadCustomers()"> Show customers who owe</label>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Name</th><th>Type</th><th>Credit limit</th><th>Balance</th><th>Actions</th></tr></thead>
+          <tbody id="list"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="forms">
+      <section>
+        <h2>Add customer</h2>
+        <label for="cName">Name</label>
+        <input id="cName" type="text" maxlength="120" required>
+        <label for="cType">Type</label>
+        <select id="cType"><option value="REGULAR">Regular</option><option value="WHOLESALE">Wholesale</option></select>
+        <button type="button" onclick="addCustomer()">Add customer</button>
+      </section>
+
+      <section>
+        <h2>Record credit sale</h2>
+        <label for="saleCustomer">Customer</label>
+        <select id="saleCustomer"></select>
+        <label for="saleDesc">Description</label>
+        <input id="saleDesc" type="text" maxlength="240" required>
+        <label for="saleAmount">Amount (K)</label>
+        <input id="saleAmount" type="number" min="0.01" step="0.01" required>
+        <button type="button" onclick="addSale()">Record sale</button>
+      </section>
+
+      <section>
+        <h2>Record repayment</h2>
+        <label for="repayCustomer">Customer</label>
+        <select id="repayCustomer"></select>
+        <label for="repayAmount">Amount (K)</label>
+        <input id="repayAmount" type="number" min="0.01" step="0.01" required>
+        <button type="button" onclick="addRepayment()">Record repayment</button>
+      </section>
+    </div>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

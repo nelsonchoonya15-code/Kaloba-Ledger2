@@ -2,7 +2,7 @@ package kaloba.web;
 
 import io.javalin.Javalin;
 import io.javalin.http.Context;
-import kaloba.e.LedgerService;
+import kaloba.service.LedgerService;
 import kaloba.exception.CreditLimitExceededException;
 import kaloba.exception.CustomerNotFoundException;
 import kaloba.model.CreditSale;
