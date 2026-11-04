@@ -1,9 +1,0 @@
-kaloba\ledger\Ledger.class
-kaloba\CreditSale.class
-kaloba\ledger\Main.class
-kaloba\ledger\RegularCustomer.class
-kaloba\ledger\LedgerService.class
-kaloba\Repayment.class
-kaloba\WholesaleCustomer.class
-kaloba\ledger\CreditLimitExceededException.class
-kaloba\Customer.class
